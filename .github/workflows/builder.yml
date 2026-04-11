@@ -68,6 +68,7 @@ jobs:
       fail-fast: false
       matrix:
         alpine_version: ["3.22", "3.23", "3.24"]
+        exclude: [{alpine_version: "3.22"}, {alpine_version: "3.23"}]
     permissions:
       contents: read
       id-token: write # For cosign signing
@@ -156,6 +157,7 @@ jobs:
       matrix:
         alpine_version: ["3.22", "3.23", "3.24"]
         python_version: ["3.12", "3.13", "3.14"]
+        exclude: [{alpine_version: "3.22"}, {alpine_version: "3.23"}, {python_version: "3.12"}, {python_version: "3.13"}]
     permissions:
       contents: read
       id-token: write # For cosign signing
