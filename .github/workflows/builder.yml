@@ -10,7 +10,7 @@ on:
 
 env:
   REGISTRY_PREFIX: ghcr.io/${{ github.repository_owner }}
-  ARCHITECTURES: '["amd64", "aarch64"]'
+  ARCHITECTURES: '["amd64", "aarch64", "riscv64"]'
   ALPINE_LATEST: "3.24"
   DEBIAN_LATEST: "trixie"
   UBUNTU_LATEST: "26.04"
