@@ -4,7 +4,7 @@ on:
   workflow_call:
     inputs:
       architectures:
-        description: Architectures to build (JSON array, e.g., '["amd64", "aarch64"]')
+        description: Architectures to build (JSON array, e.g., '["amd64", "aarch64", "riscv64"]')
         required: true
         type: string
       build-args:
