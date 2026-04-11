@@ -77,6 +77,7 @@ jobs:
       architectures: ${{ needs.init.outputs.architectures }}
       build-args: |
         ALPINE_VERSION=${{ matrix.alpine_version }}
+        EXTRA_INDEX_URL=${{ vars.EXTRA_INDEX_URL }}
       cache-gha-scope: alpine-${{ matrix.alpine_version }}
       cache-image-tag: ${{ matrix.alpine_version }}
       context: alpine
