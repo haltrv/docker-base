@@ -103,10 +103,8 @@ RUN \
         --enable-optimizations \
         --enable-option-checking=fatal \
         --enable-shared \
-        --with-lto=thin \
         --with-system-libmpdec \
         --with-system-expat \
-        --with-tail-call-interp \
         --without-ensurepip \
         --without-static-libpython \
         CC=clang \
