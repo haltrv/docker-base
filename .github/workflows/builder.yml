@@ -97,6 +97,7 @@ jobs:
       fail-fast: false
       matrix:
         debian_version: ["bookworm", "trixie"]
+        exclude: [{debian_version: "bookworm"}]
     permissions:
       contents: read
       id-token: write # For cosign signing
